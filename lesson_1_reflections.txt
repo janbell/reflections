@@ -1,0 +1,35 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+    It made the changes easy to see and the bug much easier to find than when we perused the entire files side by side. Automation is generally better than eyeballs.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+    First, you can see what has already been done and abandoned (if applicable). Second, if you hose something royally, it's easy to get back to the working source before you made your changes and start over. Third, if something is only slightly awry, you can view the differences between the current and previous version and identify the error. Fourth, you can see who else changed the file and blame them for the problems.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+    Manual commit can help keep a lot of junk out of the versioning system, particularly when you are making extensive changes over a long period of time. If other people are working on the same item, though, you can get out of sync with quick changes unless the system has a checkout and lockout feature which will reserve the source code for your exclusive use during your changes. Con, it's easy to skip steps or forget to do the versioning when you are finished, so automatic systems like Google are better at capturing the complete picture.
+
+	Manual commit allows you to commit logically and at the appropriate time, for example: fix all typos (one commit) or fix two small bugs in different functions (two commits, two comments - fixes are not related).
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git's method ensures that all related changes across multiple files are committed at the same time and the versioning record for that change refers to all the changed files, helping anyone who may be going back to research that change. Google's method allows invisible changes (like additions to css which are not yet used in html) to go into production separately, but may lose track of the entirety of the change scope.
+
+	Commit methods need to reflect the purpose of the changes being committed. Web files are typically interrelated and all the files should be committed simultaneously as they are changed. it makes logical sense. Google manages all sorts of documents, but they are not necessarily related and managing them separately makes a lot of sense.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Git log gives a complete list of the changes made to the file. From that, you can find the changes of interest and the identifiers of the commits that made those changes.
+
+Once you have the identifiers, the git diff command lists the differences between the two versions of the files so you can see what has changed.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    It's simple to return to previous correct versions of the code and to list differences/changes between the correct version and the failing version. You can even check out the good code and start over if it's easier than trying to diagnose the changes. This means you can't wipe out a known good version of code, so you can change it without fear of losing working programs.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
