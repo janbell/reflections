@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+It's a heck of a good idea to have a remote backup for your work, for one thing. In addition, if other people are
+working with you, it's the only way to keep the work in sync.
