@@ -1,0 +1,15 @@
+What happens when you initialize a repository?
+
+Git creates a .git folder (normally hidden) and creates the initial version of the objects it uses to track changes. That is, it creates the git repository.
+
+Why do you need to do it?
+
+So git can function properly on that particular folder.
+
+How is the staging area different from the working directory and the repository?
+
+It contains a logical group of files which should be committed together but has not yet been committed. 
+
+What value do you think it offers?
+
+The staging area lets us set up a logical commit group without the commit having to operate on the entire working directory (which may have changes that should not be committed yet.)
