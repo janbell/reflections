@@ -8,8 +8,27 @@ So git can function properly on that particular folder.
 
 How is the staging area different from the working directory and the repository?
 
-It contains a logical group of files which should be committed together but has not yet been committed. 
+It contains a logical group of files which should be committed together but has not yet been committed.
 
 What value do you think it offers?
 
 The staging area lets us set up a logical commit group without the commit having to operate on the entire working directory (which may have changes that should not be committed yet.)
+
+How can you use the staging area to make sure you have one commit per logical change?
+Move all the elements of one logical change to the staging area, then commit them. Then repeat the process for all logical changes. You can see the difference between what is in the staging area and what's in the working directory with the git diff command.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches will be helpful for working on major changes while fixes are made to the production version, or for working on a large or extensive fix when others still need to make minor patches.
+
+Branches effectively give you another working copy of the code to use as a sandbox. By using git for change management on both versions, they can be merged neatly at some future time.
+
+How do the diagrams help you visualize the branch structure?
+They lay it out in commit order and make clear what commits are related and which are reachable.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches interleaves the commits from the merged branch back into the main branch using a single commit that points to both of the final branch commits as its parent. We show it on the diagram to make clear which commits belong to which work effort (logical unit of work).
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+git automerging is convenient for simple line/file activities, but it cannot do an intelligent analysis of significant changes. Manually merging commits all the time would be a lot of boring work. git's flagging and marking of changes it cannot automerge is very useful for analysis and good use of computer vs human time.
