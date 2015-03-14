@@ -2,3 +2,7 @@ When would you want to use a remote repository rather than keeping all your work
 
 It's a heck of a good idea to have a remote backup for your work, for one thing. In addition, if other people are
 working with you, it's the only way to keep the work in sync.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+If you have other people working on your project, you may not want their changes stomping into your local repository. Otherwise, I'm not sure.
